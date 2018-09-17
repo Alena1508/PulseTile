@@ -6,5 +6,8 @@
     <mapping directory="$PROJECT_DIR$/PulseTile-React/src/components/theme/plugins/Feeds" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/PulseTile-React/src/components/theme/plugins/TopThreeThings" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/PulseTile-React/src/components/theme/plugins/Vaccinations" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/components/theme/plugins/Feeds" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/components/theme/plugins/TopThreeThings" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/components/theme/plugins/Vaccinations" vcs="Git" />
   </component>
 </project>

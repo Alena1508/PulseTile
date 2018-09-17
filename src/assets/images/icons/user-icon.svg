@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>89E6B7C1-2D78-4B8E-83FA-6BF93F89947B-815-000044B611EC3D3B</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Normal-view,-active-and-hover-states" transform="translate(-1167.000000, -16.000000)" fill="#1993EF" fill-rule="nonzero">
+            <g id="Header" transform="translate(31.000000, 0.000000)">
+                <g transform="translate(0.000000, -7.000000)" id="Secondary-menu">
+                    <g transform="translate(1078.000000, 7.000000)">
+                        <g id="user-icon" transform="translate(58.000000, 16.000000)">
+                            <path d="M18.7588375,16.1894775 L12.0421236,14.2838653 C10.7080675,13.9053782 9.29193247,13.9053782 7.95787644,14.2838653 L1.24116249,16.1894775 C0.505977151,16.3980482 -1.60844419e-05,17.0581132 0,17.8085661 L0,18.3145438 C1.45294121e-15,19.2453956 0.769571739,20 1.71888659,20 L18.2811134,20 C19.2304283,20 20,19.2453956 20,18.3145438 L20,17.808516 C19.9999933,17.0580816 19.4940047,16.398043 18.7588375,16.1894775 Z" id="Shape"></path>
+                            <rect id="Rectangle-path" x="5" y="0" width="10" height="13" rx="5"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

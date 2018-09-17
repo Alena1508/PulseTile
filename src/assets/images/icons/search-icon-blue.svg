@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="30px" viewBox="0 0 29 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>41D22162-7B78-4B33-9B4F-FEDC2AF45ABF@3x</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-1.6%" y="-2.9%" width="103.2%" height="105.8%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Problems-/-Issues" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Problems-/-Issues-screen-+-search" transform="translate(-249.000000, -323.000000)" fill="#1993EF">
+            <g id="Table-content" filter="url(#filter-1)" transform="translate(233.000000, 282.000000)">
+                <g id="Table-header">
+                    <g id="Search" transform="translate(15.000000, 41.000000)">
+                        <g id="search-icon-blue" transform="translate(16.866173, 15.472648) rotate(-45.000000) translate(-16.866173, -15.472648) translate(12.366173, 8.472648)">
+                            <path d="M4.37635514,1.2493945 C2.65233626,1.2493945 1.2493945,2.65174604 1.2493945,4.37635514 C1.2493945,6.10037403 2.65233626,7.50331579 4.37635514,7.50331579 C6.10037403,7.50331579 7.50331579,6.10037403 7.50331579,4.37635514 C7.50331579,2.65174604 6.10037403,1.2493945 4.37635514,1.2493945 M4.37635514,8.75271029 C1.96303641,8.75271029 0,6.78967388 0,4.37635514 C0,1.96303641 1.96303641,-2.84217094e-14 4.37635514,-2.84217094e-14 C6.78967388,-2.84217094e-14 8.75271029,1.96303641 8.75271029,4.37635514 C8.75271029,6.78967388 6.78967388,8.75271029 4.37635514,8.75271029" id="Fill-1"></path>
+                            <path d="M4.89265109,8.33856172 L4.89265109,12.7795575 C4.89265109,13.0862456 4.57509086,13.33475 4.18317846,13.33475 C3.79196094,13.33475 3.47440072,13.0862456 3.47440072,12.7795575 L3.47440072,8.33856172" id="Fill-4"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

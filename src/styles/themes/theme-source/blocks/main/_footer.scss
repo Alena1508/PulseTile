@@ -1,0 +1,14 @@
+.footer {
+  background-color: map-get($footer, 'bg');
+  color: map-get($footer, 'color');
+  @include respond-to(xs) {
+    padding: 12px 10px !important;
+  }
+  .footer-text {
+    @include respond-to(xs) {
+      max-width: 39%;
+      font-size: 11px;
+      line-height: 13px;
+    }
+  }
+}

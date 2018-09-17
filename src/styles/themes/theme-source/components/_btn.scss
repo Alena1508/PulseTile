@@ -1,0 +1,237 @@
+.btn {
+  background: #dddddd;
+}
+
+@each $button, $color in $colored-buttons {
+  .btn-#{$button},
+  .btn-#{$button}:hover,
+  .btn-#{$button}:focus,
+  .btn-#{$button}:active {
+    color: #ffffff !important;
+    background-color: $color !important;
+    border-color: $color !important;
+    &.active {
+      background-color: $color !important;
+      border-color: $color !important;
+    }
+  }
+  .btn-default,
+  .btn-default:hover,
+  .btn-default:focus,
+  .btn-default:active { color: $text-color !important; }
+
+  .is-not-touch-device {
+   .btn-#{$button}:hover {
+      background-color: darken($color, 10%) !important;
+      border-color: darken($color, 10%) !important;
+    }
+  }
+}
+
+.btn.disabled,
+.btn[disabled],
+.is-not-touch-device .btn.disabled:hover,
+.is-not-touch-device .btn[disabled]:hover {
+  background-color: #c3c3c3 !important;
+  border-color: #c3c3c3 !important;
+  color: #ffffff !important;
+  opacity: 1;
+}
+
+.btn-inverse {
+  display: flex;
+  align-items: center;
+  background: transparent !important;
+  border-color: #ccc !important;
+  @each $button, $color in $colored-buttons {
+    &.btn-#{$button},
+    &.btn-#{$button}:hover,
+    &.btn-#{$button}:focus,
+    &.btn-#{$button}:active {
+      color: $color !important;
+      border-color: $color !important;
+      background: transparent !important;
+      &.active {
+        color: darken($color, 10%) !important;
+        border-color: darken($color, 10%) !important;
+        background: transparent !important;
+      }
+    }
+  }
+  &.btn-expand-panel {
+    //display: none;
+  }
+  &.btn-none-border {
+    border-color: transparent !important;
+    &:hover,
+    &:focus,
+    &:active {
+      border-color: transparent !important;
+      box-shadow: 0 0 0 rgb(0, 0, 0) !important;
+    }
+  }
+  .fa-cog {
+    &:before {
+      content: '';
+      width: 18px;
+      height: 18px;
+      display: block;
+      background: url("../assets/images/icons/cog.svg") no-repeat;
+      @include respond-to(xs) {
+        background: url("../assets/images/icons/cog-blue.svg") no-repeat;
+      }
+    }
+  }
+  .fa-caret-right {
+    &:before {
+      content: '';
+      width: 8px;
+      height: 12px;
+      margin-left: 6px;
+      display: block;
+      background: url("../assets/images/icons/right-angle-white.svg") no-repeat;
+    }
+  }
+  .fa-chevron-up {
+    &:before {
+      content: '';
+      width: 15px;
+      height: 15px;
+      display: block;
+      background: url("../assets/images/icons/right-angle-white.svg") center no-repeat;
+      background-size: contain;
+      transform: rotate(90deg);
+
+    }
+  }
+}
+.is-not-touch-device .btn-inverse {
+  @each $button, $color in $colored-buttons {
+    &.btn-#{$button}:hover {
+      color: darken($color, 10%) !important;
+      border-color: darken($color, 10%) !important;
+    }
+  }
+}
+
+.btn-inverse.btn.disabled,
+.btn-inverse.btn[disabled],
+.is-not-touch-device .btn-inverse.btn.disabled:hover,
+.is-not-touch-device .btn-inverse.btn[disabled]:hover {
+  background-color: transparent !important;
+  border-color: #c3c3c3 !important;
+  color: #c3c3c3 !important;
+}
+
+.btn.btn-inverse,
+.btn.btn-inverse.disabled,
+.btn.btn-inverse[disabled] {
+  &.btn-none-border {
+    border-color: transparent !important;
+  }
+}
+
+.is-not-touch-device .btn.btn-inverse,
+.is-not-touch-device .btn.btn-inverse.disabled,
+.is-not-touch-device .btn.btn-inverse[disabled] {
+  &.btn-none-border {
+    &:hover,
+    &:focus,
+    &:active {
+      border-color: transparent !important;
+      box-shadow: 0 0 0 rgb(0, 0, 0) !important;
+    }
+  }
+}
+.has-success .input-group .input-group-btn .btn {
+  border-color: map-get($colored-buttons, 'success') !important;
+}
+.has-error .input-group .input-group-btn .btn {
+  border-color: map-get($colored-buttons, 'danger') !important;
+}
+.control-group {
+  .btn-success.btn-create,
+  .btn-success.btn-create:focus,
+  .btn-success.btn-create:active {
+    width: 136px;
+    height: 41px;
+    border-radius: 20px;
+    background: #1993EF !important;
+    color: white !important;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    .fa-plus {
+      margin-left: 20px;
+      &:before {
+        content: '';
+        width: 15px;
+        height: 15px;
+        display: block;
+        background: url("../assets/images/icons/add-icon-white.svg") no-repeat;
+      }
+    }
+    &:hover,
+    &.active {
+      background: #ffffff !important;
+      border-color: #1993EF !important;
+      color: #1993EF !important;
+      .fa-plus {
+        &:before {
+          background: url("../assets/images/icons/add-icon-blue.svg") no-repeat;
+        }
+      }
+    }
+  }
+}
+
+.btn-success {
+  position: relative;
+  .fa-filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 34px;
+    height: 34px;
+    @include respond-to(xs) {
+      top: -3px;
+    }
+    &:before {
+      content: '';
+      display: block;
+      width: 34px;
+      height: 34px;
+      background: url("../assets/images/icons/search-icon-white.svg") no-repeat;
+    }
+  }
+}
+
+.btn-close {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: url("../assets/images/icons/add-icon-white.svg") no-repeat;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.arrow-back {
+  display: none;
+  vertical-align: middle;
+  margin: 0 13px 4px 10px;
+  width: 9px;
+  height: 15px;
+  background: url("../assets/images/icons/right-angle-white.svg") no-repeat;
+  background-size: cover;
+  transform: rotate(-180deg);
+  cursor: pointer;
+  @include respond-to(md) {
+    display: inline-block !important;
+  }
+}

@@ -1,0 +1,72 @@
+.wrap-header-toolbar {
+  background: white;
+  border: 1px solid #E5E5E5;
+  .container-fluid {
+    @include respond-to(xs) {
+      padding: 0 15px;
+      border-width: 2px;
+    }
+  }
+  .btn-close {
+    width: 16px;
+    height: 16px;
+    margin-right: 7px;
+    display: inline-block;
+    background: url("../assets/images/icons/add-icon-blue.svg") no-repeat;
+    transform: rotate(45deg);
+  }
+  .btn-text {
+    font-weight: bold;
+  }
+}
+.header-toolbar {
+  padding-top: 0;
+  padding-bottom: 0;
+  color: #3E3E3E;
+  font-size: 15px;
+  line-height: 21px;
+  @include respond-to(md) {
+    display: flex;
+    align-items: center;
+  }
+  .wrap-patient-info {
+    padding: 11px 0;
+    margin-left: 56px;
+    padding-left: 18px;
+    border-left: 1px solid #E5E5E5;
+    @include respond-to(md) {
+      width: 100%;
+    }
+    @include respond-to(sm) {
+      width: auto;
+    }
+    @include respond-to(xs) {
+      border: 0;
+      display: none;
+    }
+  }
+  .patient-info {
+    margin-bottom: -6px;
+    .column-1 {
+      float: none;
+      margin-right: 0;
+      text-align: right;
+      display: flex;
+      justify-content: space-between;
+    }
+    .column-2 {
+      float: none;
+    }
+    .patient-info-item {
+      font-weight: 400;
+      &.significant {
+        font-size: 17px;
+      }
+      .key {
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
+
+}

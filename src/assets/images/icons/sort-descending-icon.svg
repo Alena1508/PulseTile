@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="30px" viewBox="0 0 25 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>8649B027-583F-437F-8999-2249C59D56BE</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-1.6%" y="-3.2%" width="103.2%" height="106.4%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Problems-/-Issues" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Problems-/-Issues-+-active-state" transform="translate(-1085.000000, -329.000000)" stroke="#3E3E3E">
+            <g id="Table-content" filter="url(#filter-1)" transform="translate(233.000000, 282.000000)">
+                <g id="Column-3" transform="translate(809.000000, 50.000000)">
+                    <g id="sort-descending-icon" transform="translate(52.000000, 6.000000)">
+                        <path d="M3.5,0.87189683 L0.960327781,4.5 L6.03967222,4.5 L3.5,0.87189683 Z" id="Fill-1" fill="#000000"></path>
+                        <path d="M0.960327781,7.5 L3.5,11.1281032 L6.03967222,7.5 L0.960327781,7.5 Z" id="Fill-2"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

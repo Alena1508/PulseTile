@@ -1,0 +1,64 @@
+.pagination-block {
+  @include respond-to(xs) {
+    float: none;
+    display: flex;
+    justify-content: center;
+    margin:  0 auto;
+  }
+  .pagination-item {
+    @include respond-to(xs) {
+      float: none;
+    }
+    .pagination-link,
+    .pagination-link:focus {
+      background: #fff;
+      border-color: #ddd;
+      color: #1993EF;
+      width: 39px;
+      height: 41px;
+      font-size: 14px;
+      line-height: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &.active .pagination-link {
+      background-color: $base-color;
+      border-color: $base-color;
+      color: $text-on-base-color;
+    }
+    &.disabled {
+      &:hover {
+        .pagination-link {
+          color: #1993EF !important;
+        }
+      }
+      .pagination-link {
+        background-color: #F4F3F3;
+        border-color: #ddd;
+        color: #1993EF;
+      }
+    }
+    &.arrow {
+      .pagination-link {
+        font-size: 27px;
+        line-height: 41px;
+      }
+    }
+  }
+  .is-not-touch-device .pagination-item {
+    &:not(.disabled):hover { z-index: 2; }
+    & .pagination-link:hover,
+    &.active .pagination-link:hover {
+      background-color: $base-color;
+      border-color: $base-color;
+      color: $text-on-base-color;
+    }
+    &.disabled .pagination-link:hover {
+      background-color: #F4F3F3;
+      border-color: #ddd;
+      color: $text-color;
+    }
+  }
+}
+

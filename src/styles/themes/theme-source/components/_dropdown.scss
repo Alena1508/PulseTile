@@ -1,0 +1,105 @@
+.dropdown-menu {
+  background-color: #fff;
+  border-color: #d7d7d7;
+}
+
+.dropdown.open .btn-inverse {
+  &,
+  &:focus,
+  &:active {
+    background: #fff !important;
+    &:hover,
+    &.active {
+      background: #fff !important;
+    }
+  }
+}
+
+.dropdown-menu-panel {
+  &.dropdown-menu-summary {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 30px;
+    border-radius: 0;
+    width: 529px;
+  }
+  .form-group-wrapper {
+    .heading {
+      border-bottom-color: #979797;
+      color: #3E3E3E;
+      font-size: 14px;
+      line-height: 30px;
+      font-weight: 600;
+      text-transform: none;
+      margin-bottom: 10px;
+      padding-bottom: 0;
+    }
+    .form-group {
+      margin-bottom: 7px;
+    }
+    .fcustominp-state {
+      .fcustominp-label {
+        line-height: 30px;
+        float: none;
+        display: inline-block;
+        vertical-align: middle;
+        color: #3E3E3E;
+        margin-top: 3px;
+      }
+      .fcustominp {
+        float: none;
+        display: inline-block;
+        vertical-align: middle;
+        width: 17px;
+        height: 17px;
+        label {
+          border-radius: 4px;
+          border-color: #1993EF;
+        }
+        input[type=checkbox] {
+          &:checked + label:after {
+            border-color: #1993EF;
+            border-width: 0 3px 3px 0;
+          }
+        }
+        input[type=radio] + label {
+          border-radius: 50%;
+          width: 17px;
+          height: 17px;
+          margin-top: 0;
+          background: white;
+        }
+        input[type=radio] {
+          &:checked + label:after {
+            width: 8.5px;
+            height: 8.5px;
+            background: #1993EF;
+            left: 0;
+            right: 0;
+            top: 23%;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+.dropdown-menu-item {
+  &.active {
+    background: #f3f3f3;
+  }
+}
+
+.is-not-touch-device .dropdown-menu-item:hover {
+  background: #f3f3f3;
+}
+
+.dropdown-menu-item-text {
+  color: #3c3c3c;
+}
+
+.dropdown-menu-item-icon {
+  color: $base-color;
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="28px" viewBox="0 0 24 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>4473D9B0-9F5F-4523-923A-380D420DFDDC</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-6.5%" y="-5.8%" width="113.0%" height="111.5%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Normal-view,-active-and-hover-states" transform="translate(-431.000000, -335.000000)" fill="#3E3E3E">
+            <g id="Page-content" transform="translate(31.000000, 0.000000)">
+                <g id="Problems-pod" filter="url(#filter-1)" transform="translate(199.000000, 230.000000)">
+                    <g id="Pod-list" transform="translate(1.000000, 108.000000)">
+                        <polygon id="right-angle-dark" points="209.639648 15.8398438 208.860352 15.0673828 212.996094 10.9316406 208.860352 6.79589844 209.639648 6.0234375 214.547852 10.9316406"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

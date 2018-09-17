@@ -1,0 +1,45 @@
+.user-panel-item {
+  &.open .btn-header,
+  &.active .btn-header {
+    background: map-get($header-btn, 'bg-active');
+    color: map-get($header-btn, 'color-active');
+  }
+  .btn-header {
+    width: 60px;
+    background: white;
+    border-left: 1px solid #E5E5E5;
+    @include respond-to(xs) {
+      width: 55px;
+    }
+    .fa-bookmark {
+      &:before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        width: 14px;
+        height: 21px;
+        background: url("../assets/images/icons/bookmark-icon.png") no-repeat;
+      }
+    }
+    .fa-user {
+      &:before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        width: 21px;
+        height: 20px;
+        background: url("../assets/images/icons/user-icon.svg") no-repeat;
+      }
+    }
+    .fa-question-circle {
+      &:before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        width: 21px;
+        height: 20px;
+        background: url("../assets/images/icons/help-icon.svg") no-repeat;
+      }
+    }
+  }
+}

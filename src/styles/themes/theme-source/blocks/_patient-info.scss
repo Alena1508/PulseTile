@@ -1,0 +1,8 @@
+.patient-info-caption {
+  color: $text-on-base-color;
+  .patient-info-caption-btn {
+    @include respond-to(xs) {
+      display: none;
+    }
+  }
+}

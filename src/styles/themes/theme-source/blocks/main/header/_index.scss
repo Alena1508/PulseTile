@@ -1,0 +1,33 @@
+.header .navbar {
+  background: $header-bg;
+  @include respond-to(xs) {
+    position: static;
+    padding: 5px 15px;
+    display: flex;
+  }
+  .user-panel {
+    @include respond-to(xs) {
+      position: absolute;
+      bottom: 2px;
+      right: 0;
+    }
+    .user-panel-item {
+      &:first-child {
+        .btn-header {
+          border: 0;
+          @include respond-to(xs) {
+            border-left: 1px solid #E5E5E5;
+          }
+        }
+      }
+    }
+  }
+}
+
+@import 'logo';
+@import 'user-panel';
+@import 'header-buttons';
+@import 'toolbar';
+@import 'title';
+@import 'notification';
+@import 'user';

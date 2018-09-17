@@ -1,0 +1,75 @@
+.user-panel {
+  .btn-header {
+    height: $header-height;
+    line-height: $header-height;
+    @include respond-to(xs) {
+      width: $header-height;
+      height: 49px;
+      border-left: 0;
+    }
+  }
+}
+.btn-header-prev {
+  width: $header-height;
+  background: $base-color;
+  @include respond-to(xs) {
+    display: none;
+  }
+  &:hover {
+    background: $base-color;
+  }
+  .fa-arrow-left {
+    &:before {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      width: 21px;
+      height: 20px;
+      background: url("../assets/images/icons/home-white.svg") no-repeat;
+    }
+  }
+}
+.header {
+  @include respond-to(xs) {
+    position: relative;
+  }
+  .wrap-logo {
+    @include respond-to(xs) {
+      padding: 0;
+    }
+  }
+  .navbar-space-right {
+    padding-right: 0;
+    .header-list__item {
+      padding-right: 0;
+    }
+    @include respond-to(xs) {
+      display: block;
+    }
+    .header-list {
+      @include respond-to(xs) {
+        justify-content: flex-end;
+      }
+    }
+    .header-list__item {
+      @include respond-to(xs) {
+        padding: 0;
+      }
+    }
+  }
+  .wrap-logo {
+    @include respond-to(xs) {
+      float: none;
+    }
+    .logo {
+      .logo-icon {
+        .img {
+          @include respond-to(xs) {
+            width: 150px;
+          }
+        }
+      }
+    }
+  }
+
+}

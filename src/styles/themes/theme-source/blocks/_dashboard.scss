@@ -1,0 +1,137 @@
+.board {
+  border-color: map-get($board, 'border');
+  color: map-get($board, 'item-color');
+}
+
+.board-header {
+  background-color: map-get($board, 'header-bg');
+  color: map-get($board, 'header-color');
+}
+
+.board-title-container {
+  margin-top: 7px;
+  margin-bottom: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 5;
+}
+
+.board-title {
+  color: map-get($board, 'header-color');
+}
+
+.board-body {
+  background: #1993EF;
+  height: 100%;
+}
+
+.board-preview {
+  width: 50px;
+  height: 35px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  padding-bottom: 0;
+  background-position: center;
+  position: relative;
+  z-index: 5;
+}
+
+.board-title-wrapper {
+  padding-top: 17px;
+  height: 100%;
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("../assets/images/icons/blue-ring-01.png") no-repeat;
+  }
+}
+
+//test
+.dashboard-item {
+  &:nth-child(2) {
+    .board-title-wrapper {
+      &:after {
+        transform: rotate(90deg);
+      }
+    }
+  }
+  &:nth-child(3) {
+    .board-title-wrapper {
+      &:after {
+        transform: rotate(180deg);
+        background-position: 50px 20px;
+      }
+    }
+  }
+  &:nth-child(4) {
+    .board-title-wrapper {
+      &:after {
+        background-position: -10px 5px;
+        transform: rotate(25deg);
+      }
+    }
+  }
+  &:nth-child(5) {
+    .board-title-wrapper {
+      &:after {
+        background-position: 35px 15px;
+        transform: rotate(-10deg);
+      }
+    }
+  }
+  &:nth-child(6) {
+    .board-title-wrapper {
+      &:after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.board-list-item {
+  background: map-get($board, 'item-odd-bg');
+  &:nth-of-type(even) {
+    background: map-get($board, 'item-bg');
+  }
+}
+
+.board-list-link {
+  color: map-get($board, 'item-color');
+  padding: 10px 15px;
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 13%;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    background: url("../assets/images/icons/right-angle-dark.svg") no-repeat;
+    @include respond-to(xs) {
+      right: 15px;
+    }
+  }
+}
+
+.is-not-touch-device .board-list-link:hover {
+  background: #1993EF;
+  color: map-get($board, 'item-color-hover');
+  &:after {
+    top: 35%;
+    right: -10px;
+    background: url("../assets/images/icons/right-angle-white.svg") no-repeat;
+    @include respond-to(xs) {
+      right: 5px;
+    }
+  }
+}
+

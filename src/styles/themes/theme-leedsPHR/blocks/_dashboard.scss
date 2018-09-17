@@ -1,0 +1,54 @@
+.dashboard {
+  padding-top: 0;
+}
+
+.dashboard-item {
+  margin-bottom: 22px;
+  padding-left: 9px;
+  padding-right: 9px;
+  @include respond-from(md) {
+    width: 25%;
+  }
+  @include respond-to(xs) {
+    padding: 0 5px;
+  }
+}
+
+.board {
+  box-shadow: 0 2px 15px 0 rgba(0,0,0,0.5);
+}
+
+.board-header {
+  padding: 5px 8px;
+  border-bottom: 2px solid #00aeef;
+  @include clearfix;
+}
+
+.board-title {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 600;
+  text-align: center;
+  @include text-truncate;
+}
+
+.board-list-item {
+  border-top: 1px solid #ccc;
+}
+
+.board-list-link {
+  line-height: 19px;
+  @include text-truncate;
+}
+
+.btn-board-more {
+  height: 21px;
+  line-height: 26px;
+  border: none !important;
+  padding: 0;
+  width: 26px;
+  min-width: 10px;
+  i {
+    color: #fff !important;
+  }
+}
